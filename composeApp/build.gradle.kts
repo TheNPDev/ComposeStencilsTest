@@ -88,5 +88,10 @@ publishing {
             from(components["kotlin"])
         }
     }
+    repositories {
+        maven {
+            url = uri("https://jitpack.io")
+        }
+    }
 }
 
