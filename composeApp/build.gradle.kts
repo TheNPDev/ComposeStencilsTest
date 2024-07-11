@@ -97,15 +97,12 @@ android {
     }
 }
 publishing {
-    publications{
-        register<MavenPublication>("release"){
+    publications {
+        create<MavenPublication>("release") {
+            from(components["kotlin"])
             groupId = "com.github.TheNPDev"
-            artifactId = "ComposeStecilsTest"
+            artifactId = "ComposeStencilsTest"
             version = "1.0.0"
-
-            afterEvaluate{
-                from(components["kotlin"])
-            }
         }
     }
     repositories {
