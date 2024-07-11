@@ -38,6 +38,7 @@ kotlin {
     sourceSets {
         
         androidMain.dependencies {
+            implementation(kotlin("stdlib"))
             implementation(compose.preview)
             implementation(libs.androidx.activity.compose)
         }
