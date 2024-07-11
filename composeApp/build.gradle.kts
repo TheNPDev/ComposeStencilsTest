@@ -41,6 +41,7 @@ kotlin {
             implementation(libs.androidx.activity.compose)
         }
         commonMain.dependencies {
+            implementation("org.jetbrains.kotlin:kotlin-stdlib-common")
             implementation(compose.runtime)
             implementation(compose.foundation)
             implementation(compose.material)
