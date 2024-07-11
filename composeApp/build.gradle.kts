@@ -10,6 +10,11 @@ plugins {
     id("maven-publish")
 }
 
+repositories {
+    google()
+    mavenCentral()
+}
+
 kotlin {
     androidTarget {
         @OptIn(ExperimentalKotlinGradlePluginApi::class)
