@@ -1,3 +1,5 @@
+package org.example.composestencilstest
+
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column

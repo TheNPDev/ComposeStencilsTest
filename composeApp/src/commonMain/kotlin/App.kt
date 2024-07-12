@@ -19,6 +19,7 @@ import org.jetbrains.compose.ui.tooling.preview.Preview
 
 import composestencilstest.composeapp.generated.resources.Res
 import composestencilstest.composeapp.generated.resources.compose_multiplatform
+import org.example.composestencilstest.LoginMolecule
 
 @Composable
 @Preview
