@@ -37,11 +37,11 @@ kotlin {
         }
         commonMain.dependencies {
             implementation("org.jetbrains.kotlin:kotlin-stdlib-common")
-            implementation(compose.runtime)
+//            implementation(compose.runtime)
             implementation(compose.foundation)
             implementation(compose.material)
             implementation(compose.ui)
-            implementation(compose.components.resources)
+//            implementation(compose.components.resources)
             implementation(compose.components.uiToolingPreview)
         }
     }
