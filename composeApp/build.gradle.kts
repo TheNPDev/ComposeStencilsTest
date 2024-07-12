@@ -37,11 +37,12 @@ kotlin {
     sourceSets {
         
         androidMain.dependencies {
-            implementation(kotlin("stdlib"))
+            implementation ("org.jetbrains.kotlin:kotlin-stdlib-jdk8:2.0.0")
             implementation(compose.preview)
             implementation(libs.androidx.activity.compose)
         }
         commonMain.dependencies {
+            implementation ("org.jetbrains.kotlin:kotlin-stdlib-jdk8:2.0.0")
             implementation(compose.runtime)
             implementation(compose.foundation)
             implementation(compose.material)
@@ -63,8 +64,8 @@ android {
     defaultConfig {
         minSdk = 24
 //        targetSdk = 34
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-        consumerProguardFiles("consumer-rules.pro")
+//        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+//        consumerProguardFiles("consumer-rules.pro")
     }
     packaging {
         resources {
