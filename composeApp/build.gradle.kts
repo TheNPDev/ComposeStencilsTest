@@ -95,8 +95,8 @@ android {
 publishing {
     publications{
         register<MavenPublication>("release"){
-            groupId = "com.github.TheNPDev"
-            artifactId = "ComposeStencilsTest"
+            groupId = "com.github.TheNPDev.ComposeStencilsTest"
+            artifactId = "composeApp"
             version = "1.0.0"
 
             afterEvaluate{
@@ -110,5 +110,6 @@ publishing {
         }
     }
 }
+
 
 
