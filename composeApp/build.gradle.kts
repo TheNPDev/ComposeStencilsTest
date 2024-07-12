@@ -41,6 +41,7 @@ kotlin {
             implementation(libs.androidx.activity.compose)
         }
         commonMain.dependencies {
+            implementation("org.jetbrains.kotlin:kotlin-stdlib-common")
             implementation(compose.runtime)
             implementation(compose.foundation)
             implementation(compose.material)
@@ -62,8 +63,8 @@ android {
     defaultConfig {
         minSdk = 24
 //        targetSdk = 34
-//        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-//        consumerProguardFiles("consumer-rules.pro")
+        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles("consumer-rules.pro")
     }
     packaging {
         resources {
@@ -103,9 +104,9 @@ publishing {
             artifactId = "ComposeStencilsTest"
             version = "1.0.0"
 
-//            afterEvaluate{
-//                from(components["release"])
-//            }
+            afterEvaluate{
+                from(components["kotlin"])
+            }
         }
     }
     repositories {
