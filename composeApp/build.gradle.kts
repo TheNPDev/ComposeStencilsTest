@@ -37,12 +37,10 @@ kotlin {
     sourceSets {
         
         androidMain.dependencies {
-            implementation ("org.jetbrains.kotlin:kotlin-stdlib-jdk8:2.0.0")
             implementation(compose.preview)
             implementation(libs.androidx.activity.compose)
         }
         commonMain.dependencies {
-            implementation ("org.jetbrains.kotlin:kotlin-stdlib-jdk8:2.0.0")
             implementation(compose.runtime)
             implementation(compose.foundation)
             implementation(compose.material)
