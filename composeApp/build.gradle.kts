@@ -33,6 +33,7 @@ kotlin {
         
         androidMain.dependencies {
             implementation(compose.preview)
+            implementation("androidx.compose.ui:ui-tooling:1.6.8")
             implementation(libs.androidx.activity.compose)
         }
         commonMain.dependencies {

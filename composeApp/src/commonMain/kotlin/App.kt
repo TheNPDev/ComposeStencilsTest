@@ -15,23 +15,23 @@ import org.jetbrains.compose.ui.tooling.preview.Preview
 fun App() {
     MaterialTheme {
         Box {
-//            LoginMolecule(
-//                onLoginClicked = { username, password ->
-//                },
-//                onForgotPasswordClicked = {
-//                },
-//                modifier = Modifier
-//                    .fillMaxSize()
-//                    .padding(16.dp),
-//                textFieldModifier = Modifier
-//                    .fillMaxWidth()
-//                    .padding(horizontal = 16.dp),
-//                buttonModifier = Modifier
-//                    .width(200.dp)
-//                    .height(48.dp),
-//                textModifier = Modifier
-//                    .padding(top = 16.dp)
-//            )
+            LoginMolecule(
+                onLoginClicked = { username, password ->
+                },
+                onForgotPasswordClicked = {
+                },
+                modifier = Modifier
+                    .fillMaxSize()
+                    .padding(16.dp),
+                textFieldModifier = Modifier
+                    .fillMaxWidth()
+                    .padding(horizontal = 16.dp),
+                buttonModifier = Modifier
+                    .width(200.dp)
+                    .height(48.dp),
+                textModifier = Modifier
+                    .padding(top = 16.dp)
+            )
         }
     }
 }
